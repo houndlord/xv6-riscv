@@ -1,16 +1,18 @@
 #include "kernel/types.h"
 #include "kernel/stat.h"
-//#include "kernel/sysproc.h"
+//#include "kernel/sysproc.c"
 #include "user/user.h"
+//#include <stdlib.h>
 
 int 
-main(int argc, char *argv[])
+main(int argc, char *argv[]){
 {
-
   if(argc > 2){
-    fprintf(2, "Usage: sleep n...\n");
+    printf("Usage: sleep n...\n");
     exit(1);
-  }
+  } 
 
-sys_sleep(argv[0])
+  sleep(atoi(argv[1]));
+}
+exit(0);
 } 

@@ -1,4 +1,4 @@
-x^// which hart (core) is this?
+// which hart (core) is this?
 static inline uint64
 r_mhartid()
 {
